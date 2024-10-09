@@ -24,4 +24,4 @@ const student = [
 
 students
   .filter((student) => student.graduated === false)
-  .forEarch((student) => console.log(student.name));
+  .forEach((student) => console.log(student.name));
