@@ -3,10 +3,14 @@ const DOMSelectors = {
   cardHeader: document.querySelector(".card-header"),
   button: document.querySelector(".btn"),
 };
-console.button.addEventListener("click", function (event) {
+const button = document.querySelector("button"); // Replace with your actual selector
+
+button.addEventListener("click", function (event) {
+  event.preventDefault();
   console.log(event.target.parentElement);
   event.target.parentElement.style.backgroundColor = "red";
 });
+
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   console.log(document.querySelector("input").value);
