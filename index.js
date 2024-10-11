@@ -8,7 +8,6 @@ const button = document.querySelector("button"); // Replace with your actual sel
 button.addEventListener("click", function (event) {
   event.preventDefault();
   console.log(event.target.parentElement);
-  event.target.parentElement.style.backgroundColor = "red";
 });
 
 DOMSelectors.form.addEventListener("submit", function (event) {
