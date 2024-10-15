@@ -1,62 +1,94 @@
-body, html, *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-size: 10px;
+body, html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
 }
 
-body{
+body {
     background-color: black;
+    font-family: 'Inter', sans-serif; 
 }
 
-h1{
+h1 {
     color: rgb(240, 240, 255);
     font-size: 80px;
     text-align: center;
+    margin-top: 20px;
 }
-.post{
-    background-color: cornflowerblue;
+
+.post {
+    background-color: #69c1d1;
     border-radius: 8%;
-    border: solid;
-    border-color: rgb(64, 94, 142);
-    border-width: 3%;
-    height: 75%;
+    border: 3px solid #000000;
+    height: auto;
     width: 40%;
     align-items: center;
-    margin-left: 10%;
-    margin-top: 7%;
-    padding-top: 5%;
+    margin: 7% auto;
+    padding: 5%;
 }
+
 .cards {
     width: 60%;
-    height: 35vw;
-    background-color: rgb(189, 193, 236);
-    border: solid;
-    border-color: rgb(61, 81, 137);
-    margin-top: 1rem;
+    background-color: #152b31;
+    border: 3px solid #69c1d1;
     border-radius: 8%;
-    align-items: center;
+    padding: 1rem;
+    margin-left: 19%;
     min-width: 21rem;
     min-height: 33rem;
-    margin-left: 20%;
 }
-h2{
+
+h2 {
     font-size: 1.5vw;
-    margin-left: 20%;
+    padding: 10%;
+    align-items: center;
+    color: rgb(50, 50, 50); 
 }
-.input{
-    width: 8vw;
-    height: 2vw;
-    margin-left: 20%;
-    margin-bottom: 15%;
+
+.input {
+    width: 80%;
+    height: 2.5vw; 
     font-size: 1.3vw;
-    border-color: black;
+    margin-left: 10%;
+    border: 2px solid black; 
     border-radius: 0.2vw;
 }
-.btn{
-    width: 4vw;
-    height: 1.5vw;
-    font-size: 1vw;
-    margin-left: 5%;
-    background-color: rgb(74, 98, 169);
+
+.btn {
+    width: 4.5vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    background-color: #688d96;
+    color: white; 
+    border-radius: 5px;
+    margin-top: 15%;
+    margin-left: 64%;
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #354a50;
+}
+
+.player-card {
+    background-color: #fecd74; 
+    border-radius: 5px; 
+    border: solid;
+    align-items: center;
+    border-color: black;
+    padding: 10px; 
+    margin: 10px;
+    width: 15vw;
+    height: 30vw;
+}
+
+.player-card h3 {
+    margin: 0;
+    color: rgb(0, 0, 0); 
+}
+
+.player-card p {
+    margin: 5px 0; 
+    color: rgb(70, 70, 70);
 }

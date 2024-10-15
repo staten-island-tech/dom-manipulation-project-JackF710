@@ -1,34 +1,31 @@
 const DOMSelectors = {
-  header: document.querySelector("h1"),
-  cardHeader: document.querySelector(".card-header"),
-  button: document.querySelector(".btn"),
+  form: document.querySelector(".form"),
+  playerCardContainer: document.querySelector(".player-card-container"),
 };
-const button = document.querySelector("button"); // Replace with your actual selector
-
-button.addEventListener("click", function (event) {
-  event.preventDefault();
-  console.log(event.target.parentElement);
-});
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log(document.querySelector("input").value);
+
+  // Get the input values
+  const name = document.getElementById("player-name").value;
+  const rating = document.getElementById("player-rating").value;
+  const position = document.getElementById("player-position").value;
+
+  // Create a new player card element
+  const playerCardHTML = `
+    <div class="player-card">
+      <h3>${name}</h3>
+      <p>Rating: ${rating}</p>
+      <p>Position: ${position}</p>
+    </div>
+  `;
+
+  // Insert the new player card into the container
+  DOMSelectors.playerCardContainer.insertAdjacentHTML(
+    "beforeend",
+    playerCardHTML
+  );
+
+  // Clear the form fields
+  DOMSelectors.form.reset();
 });
-
-//select all buttons as nodelist (can use for each)
-const btns = document.querySelectorAll("btn");
-//make array from buttons if i want to use filter etc.
-const newbtns = Array.from(btns);
-//iterate through array and change each buttons color
-newbtns.forEach((btn) => (btn.style.backgroundColor = "blue"));
-
-newbtns.forEach((btn) =>
-  btn.addEventListener("click", function (event) {
-    console.log(event.target.textContent);
-  })
-);
-
-DOMSelectors.container.insertAdjacentHTML(
-  "beforeend",
-  '<div class="card"><h2 class="card header">${movie.title}</h2></div>'
-);

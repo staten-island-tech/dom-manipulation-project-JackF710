@@ -59,3 +59,13 @@ function getRGB() {
 //insert card with object into HTML
 
 //add event listener for remove button in JS
+
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(document.querySelector("input").value);
+});
+
+DOMSelectors.container.insertAdjacentHTML(
+  "beforeend",
+  '<div class="card"><h2 class="card header">${movie.title}</h2></div>'
+);
