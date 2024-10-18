@@ -6,26 +6,26 @@ const DOMSelectors = {
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // Get the input values
   const name = document.getElementById("player-name").value;
   const rating = document.getElementById("player-rating").value;
-  const position = document.getElementById("player-position").value;
+  const imageUrl = document.getElementById("player-image").value;
 
-  // Create a new player card element
   const playerCardHTML = `
-    <div class="player-card">
-      <h3>${name}</h3>
-      <p>Rating: ${rating}</p>
-      <p>Position: ${position}</p>
+    <div class="fifa-card">
+      <div class="fifa-rating">${rating}</div>
+      <div class="fifa-image">
+        <img src="${imageUrl}" alt="Player Image">
+      </div>
+      <div class="fifa-info">
+        <p class="fifa-name">${name}</p>
+      </div>
     </div>
   `;
 
-  // Insert the new player card into the container
   DOMSelectors.playerCardContainer.insertAdjacentHTML(
     "beforeend",
     playerCardHTML
   );
 
-  // Clear the form fields
   DOMSelectors.form.reset();
 });

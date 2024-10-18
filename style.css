@@ -76,27 +76,53 @@ h2 {
     display: flexbox;
 }
 
-.player-card {
-    background-color: #fecd74; 
-    border-radius: 5px; 
-    border: solid;
-    align-items: center;
-    border-color: black;
-    padding: 10px; 
+.player-image {
+    width: 20%;
+    height: auto;
     border-radius: 10%;
-    margin: 10px;
-    width: 25vw;
-    height: 30vw;
 }
 
-.player-card h3 {
-    color: rgb(70, 70, 70);
-    font-size: 2vw;
-}
-
-.player-card p {
-    color: rgb(0, 0, 0);
+.fifa-card {
+    position: relative;
+    width: 180px;
+    height: 300px;
+    background-color: #ffef44;
+    border: 4px solid #000;
+    border-radius: 15px;
     text-align: center;
-    margin-top: 55%;
-    font-size: 3vw;
-}
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/FIFA_Card.png/600px-FIFA_Card.png');
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .fifa-rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .fifa-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .fifa-info {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .fifa-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
