@@ -76,16 +76,10 @@ h2 {
     display: flexbox;
 }
 
-.player-image {
-    width: 20%;
-    height: auto;
-    border-radius: 10%;
-}
-
 .fifa-card {
     position: relative;
-    width: 180px;
-    height: 300px;
+    width: 300px;
+    height: 450px;
     background-color: #ffef44;
     border: 4px solid #000;
     border-radius: 15px;
@@ -103,7 +97,7 @@ h2 {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
   }
   
@@ -111,18 +105,35 @@ h2 {
     width: 80%;
     height: auto;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 27%;
   }
   
   .fifa-info {
-    position: absolute;
     bottom: 10px;
     width: 100%;
   }
   
   .fifa-name {
-    font-size: 18px;
+    font-size: 45px;
     font-weight: bold;
+    margin-top: 10px;
     text-align: center;
   }
   
+  #removeButton {
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 0.5vw;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#removeButton:hover {
+    background-color: #c9302c;
+}
