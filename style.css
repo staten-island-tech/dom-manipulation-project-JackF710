@@ -80,8 +80,8 @@ h2 {
 
 .fifa-card {
     position: relative;
-    width: 300px;
-    height: 450px;
+    width: 350px;
+    height: 600px;
     background-color: #ffef44;
     border: 4px solid #000;
     border-radius: 15px;
@@ -102,10 +102,10 @@ h2 {
   }
   
   .fifa-image img {
-    width: 60%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
-    margin-top: 27%;
+    margin-top: 20%;
   }
   
   .fifa-name {
