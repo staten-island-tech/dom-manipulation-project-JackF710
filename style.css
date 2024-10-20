@@ -71,9 +71,11 @@ h2 {
     background-color: #354a50;
 }
 
-.player-card-container{
+.player-card-container {
     display: flex;
-    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .fifa-card {
@@ -88,9 +90,7 @@ h2 {
     margin: 10px;
     padding: 10px;
     font-family: 'Inter', sans-serif;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/FIFA_Card.png/600px-FIFA_Card.png');
     background-size: cover;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
   }
   
   .fifa-rating {
@@ -108,11 +108,6 @@ h2 {
     margin-top: 27%;
   }
   
-  .fifa-info {
-    bottom: 10px;
-    width: 100%;
-  }
-  
   .fifa-name {
     font-size: 45px;
     font-weight: bold;
@@ -120,20 +115,17 @@ h2 {
     text-align: center;
   }
   
-  #removeButton {
-    width: 10vw;
-    height: 3vw;
-    font-size: 1.2vw;
-    background-color: #d9534f;
+  .remove-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
     color: white;
-    border-radius: 0.5vw;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    transition: background-color 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-#removeButton:hover {
-    background-color: #c9302c;
+.remove-button:hover {
+    background-color: darkred;
 }
